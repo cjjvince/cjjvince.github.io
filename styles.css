@@ -10,6 +10,12 @@
 @media(max-width:540px){.header-inner{padding:16px 20px}.site-header nav{column-gap:18px;row-gap:7px}.page-layout{padding:27px 20px 0}.profile{grid-template-columns:85px 1fr;gap:0 17px}.portrait{width:85px;height:auto}.profile h2{font-size:1.18rem}.profile h2 span{display:block;margin:4px 0 0}.profile-links{grid-template-columns:1fr;gap:11px;margin-top:17px}.intro h1{font-size:2.25rem}.desktop-break{display:none}.intro-lead{font-size:1.1rem}.intro-links{gap:20px}.update-note{grid-template-columns:1fr;gap:7px;padding:17px 18px}.research-grid{grid-template-columns:1fr;gap:24px}.research-label{min-height:0}.research-grid h3{font-size:1.4rem;margin:8px 0 10px}.research-grid h3 br{display:none}.section-heading{gap:12px;margin-bottom:24px}.section-heading h2{font-size:1.5rem}.publication-list li{grid-template-columns:1fr;gap:8px}.pub-year{font-size:.8rem}.timeline>div{grid-template-columns:1fr;gap:9px;padding-bottom:24px}.timeline dd{padding-left:15px}.course-list li{grid-template-columns:1fr;gap:5px;padding:17px 0}.students-section{padding:28px 23px}.students-section h2{font-size:1.95rem}.students-section .button{font-size:.875rem;width:100%;padding-left:15px;padding-right:15px}footer{align-items:flex-start;font-size:.75rem}.small-label,.research-label,.eyebrow{font-size:.75rem}}
 @media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}}
 .site-header nav{flex-wrap:wrap}
+/* Recent updates. */
+.update-note.recent-updates{display:block}
+.recent-updates h2.small-label{font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;margin:0 0 10px}
+.recent-updates ul{margin:0;padding-left:1.15em;display:grid;gap:7px}
+.recent-updates li{font-size:.9rem;color:#405764;line-height:1.65;padding-left:2px}
+.recent-updates li::marker{color:var(--accent)}
 /* Research funding. */
 .funding-intro{font-size:.94rem;color:var(--muted);margin:-9px 0 24px}
 .funding-list{list-style:none;padding:0;margin:0}
