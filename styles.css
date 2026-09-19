@@ -19,15 +19,22 @@
 .recent-updates ul{margin:0;padding-left:1.15em;display:grid;gap:7px}
 .recent-updates li{font-size:.9rem;color:#405764;line-height:1.65;padding-left:2px}
 .recent-updates li::marker{color:var(--accent)}
-/* Research funding. */
-.funding-intro{font-size:.94rem;color:var(--muted);margin:-9px 0 24px}
+/* Research funding and collaborative projects. */
+.funding-group + .funding-group{margin-top:30px;padding-top:25px;border-top:1px solid var(--line)}
+.funding-group-heading{font-size:.94rem;color:var(--accent);margin:0 0 20px}
 .funding-list{list-style:none;padding:0;margin:0}
 .funding-list li{padding:17px 0;border-bottom:1px solid var(--line);break-inside:avoid}
 .funding-list li:first-child{padding-top:0}
 .funding-list li:last-child{padding-bottom:0;border-bottom:0}
-.funding-list h3{font-size:1rem;line-height:1.5;margin-bottom:4px}
+.funding-list h4{font-size:1rem;font-weight:600;line-height:1.5;margin:0 0 4px}
+.funding-title{font-size:.94rem;line-height:1.65;margin:0 0 5px}
 .funding-meta{font-size:.875rem;color:var(--muted);margin:0}
 .funding-meta .funding-amount{color:var(--ink);font-weight:600;white-space:nowrap}
+.funding-id{display:inline-block}
+.funding-tabs-ready .funding-group-heading{display:none}
+.funding-tabs-ready .funding-group+.funding-group{margin-top:0;padding-top:0;border-top:0}
+.funding-group[role="tabpanel"]:focus-visible{outline:2px solid var(--accent);outline-offset:7px}
+@media print{.funding-tabs-ready .funding-group[hidden]{display:block!important}.funding-tabs-ready .funding-group-heading{display:block}.funding-tabs-ready .funding-group+.funding-group{margin-top:30px;padding-top:25px;border-top:1px solid var(--line)}}
 /* Selected publications: accessible tabs with complete no-script and print lists. */
 [hidden]{display:none!important}
 .publication-summary{font-size:.94rem;color:var(--muted);margin:0}

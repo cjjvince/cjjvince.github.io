@@ -8,7 +8,7 @@
   <link rel="canonical" href="https://cjjvince.github.io/">
   <meta name="theme-color" content="#16394c">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2316394c'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Georgia' font-size='36' fill='white'%3EJJ%3C/text%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css?v=0f097126912b">
+  <link rel="stylesheet" href="styles.css?v=fcbc5ec57307">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -278,26 +278,99 @@
       </section>
 
       <section id="funding" class="content-section" aria-labelledby="funding-heading">
-        <div class="section-heading"><span class="section-number">04</span><h2 id="funding-heading">Research funding</h2></div>
-        <p class="funding-intro">Principal Investigator (PI) on all grants listed below.</p>
-        <ul class="funding-list">
-          <li>
-            <h3>RGC General Research Fund (GRF)</h3>
-            <p class="funding-meta"><time datetime="2027-01-01">2027</time>–<time datetime="2029-12-31">2029</time> · <span class="funding-amount">HK$1,044,800</span> · Awarded</p>
-          </li>
-          <li>
-            <h3>Guangdong Natural Science Fund — General Programme</h3>
-            <p class="funding-meta"><time datetime="2026-01-01">2026</time>–<time datetime="2028-12-31">2028</time> · <span class="funding-amount">RMB 100,000</span></p>
-          </li>
-          <li>
-            <h3>HKU Seed Fund for PI Research — Basic Research</h3>
-            <p class="funding-meta"><time datetime="2025-06-30">2025</time>–<time datetime="2027-06-29">2027</time> · <span class="funding-amount">HK$110,760</span></p>
-          </li>
-          <li>
-            <h3>HKU Seed Fund for Basic Research — GRF/ECS Resubmission</h3>
-            <p class="funding-meta"><time datetime="2025-07-01">Jul</time>–<time datetime="2025-11-30">Nov 2025</time> · <span class="funding-amount">HK$60,000</span></p>
-          </li>
-        </ul>
+        <div class="section-heading"><span class="section-number">04</span><h2 id="funding-heading">Research funding &amp; projects</h2></div>
+        <div class="publication-tabs funding-tabs" role="tablist" aria-label="Funding and project lists" hidden>
+          <button type="button" role="tab" id="pi-funding-tab" aria-controls="pi-funding-panel" aria-selected="true">Principal Investigator (PI) <span>4</span></button>
+          <button type="button" role="tab" id="collaborative-projects-tab" aria-controls="collaborative-projects-panel" aria-selected="false" tabindex="-1">Collaborative projects <span>2</span></button>
+        </div>
+        <div class="funding-group" id="pi-funding-panel" role="group" aria-labelledby="pi-funding-heading">
+          <h3 id="pi-funding-heading" class="funding-group-heading">Principal Investigator (PI)</h3>
+          <ul class="funding-list" role="list">
+            <li>
+              <h4>RGC General Research Fund (GRF)</h4>
+              <p class="funding-title">Polar cap aurora during extreme solar wind depression: source drivers and cross-planetary implications</p>
+              <p class="funding-meta"><time datetime="2027-01-01">2027</time>–<time datetime="2029-12-31">2029</time> · <span class="funding-amount">HK$1,044,800</span> · <span class="funding-id">Grant No. 17304226</span> · Awarded</p>
+            </li>
+            <li>
+              <h4>Guangdong Natural Science Fund — General Programme</h4>
+              <p class="funding-title">Responses of Jupiter’s rotation-driven magnetic reconnection to upstream solar wind</p>
+              <p class="funding-meta"><time datetime="2026-01-01">2026</time>–<time datetime="2028-12-31">2028</time> · <span class="funding-amount">RMB 100,000</span> · <span class="funding-id">Grant No. 2026A1515011076</span></p>
+            </li>
+            <li>
+              <h4>HKU Seed Fund for PI Research — Basic Research</h4>
+              <p class="funding-title">Physical mechanisms of ionospheric scintillation in the Greater Bay Area during geomagnetically quiet periods</p>
+              <p class="funding-meta"><time datetime="2025-06-30">2025</time>–<time datetime="2027-06-29">2027</time> · <span class="funding-amount">HK$110,760</span></p>
+            </li>
+            <li>
+              <h4>HKU Seed Fund for Basic Research — GRF/ECS Resubmission</h4>
+              <p class="funding-title">Polar cap aurora during extreme solar wind depression: source drivers and implication to other planets</p>
+              <p class="funding-meta"><time datetime="2025-07-01">Jul</time>–<time datetime="2025-11-30">Nov 2025</time> · <span class="funding-amount">HK$60,000</span></p>
+            </li>
+          </ul>
+        </div>
+        <div class="funding-group" id="collaborative-projects-panel" role="group" aria-labelledby="collaborative-projects-heading">
+          <h3 id="collaborative-projects-heading" class="funding-group-heading">Collaborative projects</h3>
+          <ul class="funding-list" role="list">
+            <li>
+              <h4>National Key R&amp;D Program of China</h4>
+              <p class="funding-title">Scientific research on Jupiter’s space environment and principles of exploration</p>
+              <p class="funding-meta"><time datetime="2025-12">2025</time>–<time datetime="2030-11">2030</time> · Key project member · <span class="funding-id">Project No. 2025YFF0512400</span></p>
+            </li>
+            <li>
+              <h4>NSFC General Program</h4>
+              <p class="funding-title">Magnetic reconnection at Jupiter’s magnetopause</p>
+              <p class="funding-meta"><time datetime="2024-01">2024</time>–<time datetime="2027-12">2027</time> · Project team member · <span class="funding-id">Grant No. 42374216</span></p>
+            </li>
+          </ul>
+        </div>
+        <script>
+(() => {
+  const section = document.getElementById('funding');
+  const tablist = section?.querySelector('.funding-tabs');
+  if (!tablist) return;
+
+  const tabs = Array.from(tablist.querySelectorAll('[role="tab"]'));
+  const panels = tabs.map(tab => document.getElementById(tab.getAttribute('aria-controls')));
+  if (!tabs.length || panels.some(panel => !panel)) return;
+
+  function activate(index, focus = false) {
+    tabs.forEach((tab, i) => {
+      const selected = i === index;
+      tab.setAttribute('aria-selected', String(selected));
+      tab.tabIndex = selected ? 0 : -1;
+      panels[i].hidden = !selected;
+    });
+    if (focus) tabs[index].focus();
+  }
+
+  tabs.forEach((tab, i) => {
+    tab.querySelector('span').textContent = panels[i].querySelectorAll('.funding-list > li').length;
+    panels[i].setAttribute('role', 'tabpanel');
+    panels[i].setAttribute('aria-labelledby', tab.id);
+    panels[i].tabIndex = 0;
+    tab.addEventListener('click', () => activate(i));
+  });
+
+  tablist.addEventListener('keydown', event => {
+    const index = tabs.indexOf(event.target);
+    if (index < 0) return;
+    let next;
+    switch (event.key) {
+      case 'ArrowRight': next = (index + 1) % tabs.length; break;
+      case 'ArrowLeft': next = (index + tabs.length - 1) % tabs.length; break;
+      case 'Home': next = 0; break;
+      case 'End': next = tabs.length - 1; break;
+      default: return;
+    }
+    event.preventDefault();
+    activate(next, true);
+  });
+
+  activate(0);
+  section.classList.add('funding-tabs-ready');
+  tablist.hidden = false;
+})();
+        </script>
       </section>
 
       <section id="experience" class="content-section">
@@ -306,7 +379,7 @@
           <div><dt>2024 — present</dt><dd><h3>Research Assistant Professor</h3><p>The University of Hong Kong</p><p class="detail">Department of Earth and Planetary Sciences</p><p class="detail">Research collaborators: Prof. Binzheng Zhang and Prof. Zhonghua Yao</p></dd></div>
           <div><dt>2021 — 2024</dt><dd><h3>Postdoctoral Fellow</h3><p>The University of Hong Kong</p><p class="detail">Supervisor: Prof. Binzheng Zhang</p></dd></div>
           <div><dt>2019 — 2020</dt><dd><h3>Research Visitor</h3><p>High Altitude Observatory, NCAR</p><p class="detail">Host: Dr. Wenbin Wang</p></dd></div>
-          <div><dt>2016 — 2021</dt><dd><h3>PhD in Geophysics</h3><p>University of Science and Technology of China</p><p class="detail">Supervisors: Prof. Jiuhou Lei and Dr. Wenbin Wang (HAO/NCAR)</p></dd></div>
+          <div><dt>2016 — 2021</dt><dd><h3>PhD in Geophysics</h3><p>University of Science and Technology of China</p><p class="detail">Supervisors: Prof. Jiuhou Lei (USTC); Dr. Wenbin Wang (HAO/NCAR)</p></dd></div>
           <div><dt>2012 — 2016</dt><dd><h3>BSc in Geophysics</h3><p>University of Science and Technology of China</p></dd></div>
         </dl>
       </section>
