@@ -27,7 +27,7 @@
 .funding-list h3{font-size:1rem;line-height:1.5;margin-bottom:4px}
 .funding-meta{font-size:.875rem;color:var(--muted);margin:0}
 .funding-meta .funding-amount{color:var(--ink);font-weight:600;white-space:nowrap}
-/* Selected publications: two static groups and a full-record link. */
+/* Selected publications: accessible tabs with complete no-script and print lists. */
 [hidden]{display:none!important}
 .publication-summary{font-size:.94rem;color:var(--muted);margin:0}
 .publication-summary strong{color:var(--ink);font-weight:600}
@@ -36,6 +36,16 @@
 .publication-group-heading span{font-size:.8rem;font-weight:400;color:var(--muted);letter-spacing:0}
 .publication-overview{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px;margin-bottom:30px}
 .scholar-link{font-size:.875rem;text-decoration:none}
+.publication-profile-links{display:flex;flex-wrap:wrap;gap:8px 20px}
+.publication-tabs{display:flex;gap:5px;border-bottom:1px solid var(--line);margin-bottom:26px}
+.publication-tabs button{flex:1;min-width:0;border:0;border-bottom:3px solid transparent;background:transparent;color:var(--muted);padding:13px 10px;font:inherit;font-size:.94rem;line-height:1.5;text-align:left;cursor:pointer}
+.publication-tabs button:hover{background:var(--soft);color:var(--accent)}
+.publication-tabs button[aria-selected="true"]{border-bottom-color:var(--accent);color:var(--ink);font-weight:600}
+.publication-tabs button:focus-visible{outline:3px solid #bf7719;outline-offset:3px}
+.publication-tabs button span{display:inline-block;margin-left:7px;font-size:.75rem;font-weight:500;background:var(--soft);padding:0 7px;border-radius:10px;color:var(--accent)}
+.publication-tabs-ready .publication-group-heading{display:none}
+.publication-tabs-ready .publication-group+.publication-group{margin-top:0;padding-top:0;border-top:0}
+.publication-group[role="tabpanel"]:focus-visible{outline:2px solid var(--accent);outline-offset:7px}
 .publication-legend{font-size:.875rem;color:var(--muted);margin:24px 0 0}
 .authors sup{font-size:.75em;padding-left:1px}
 .title-translation{font-size:.9rem;color:var(--muted);margin:-2px 0 9px}
@@ -49,6 +59,8 @@
 .life-photo{margin:0}
 .life-photo img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:contain;border-radius:5px}
 .life-photo figcaption{font-size:.8rem;color:var(--muted);margin-top:9px}
+@media(max-width:540px){.publication-tabs button{font-size:.8rem;padding:11px 7px}.publication-tabs button span{margin-left:4px}}
+@media print{.publication-tabs{display:none!important}.publication-tabs-ready .publication-group[hidden]{display:block!important}.publication-tabs-ready .publication-group-heading{display:flex}.publication-tabs-ready .publication-group+.publication-group{margin-top:30px;padding-top:24px;border-top:1px solid var(--line)}}
 @media(max-width:1050px){.activities-layout{grid-template-columns:minmax(0,1fr) 160px;gap:22px}}
 @media(max-width:800px){.activities-layout{grid-template-columns:minmax(0,1fr) 200px;gap:25px}}
 @media(max-width:580px){.activities-layout{grid-template-columns:1fr;gap:28px}.life-photo{max-width:320px}.publication-overview{align-items:flex-start;flex-direction:column}}

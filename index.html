@@ -8,7 +8,7 @@
   <link rel="canonical" href="https://cjjvince.github.io/">
   <meta name="theme-color" content="#16394c">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2316394c'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Georgia' font-size='36' fill='white'%3EJJ%3C/text%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css?v=9fe0b2f30ec0">
+  <link rel="stylesheet" href="styles.css?v=4a912d1c2646">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -52,8 +52,9 @@
         <div class="update-note recent-updates" role="region" aria-labelledby="recent-updates-heading">
           <h2 class="small-label" id="recent-updates-heading">Recent updates</h2>
           <ul>
+            <li>PhD opportunities for 2027 entry — <a href="https://www.lsr.hku.hk/phd-opportunities-in-space-and-planetary-sciences/">recruitment announcement</a>.</li>
             <li>Awarded an RGC <a href="#funding">General Research Fund (GRF)</a> grant for 2027–2029.</li>
-            <li>New studies on how planetary rotation shapes polar cusp locations (<a href="https://doi.org/10.1029/2026GL122024">GRL</a>) and ionospheric electrodynamics (<a href="https://doi.org/10.1029/2026JE010060">JGR: Planets</a>).</li>
+            <li>New studies on how planetary rotation shapes polar cusp locations (<a href="https://doi.org/10.1029/2026GL122024">GRL</a>) and ionospheric electrodynamics (<a href="papers/Chen_et_al_2026_JGRPlanets_Accepted_Manuscript.pdf">JGR: Planets</a>, accepted manuscript PDF).</li>
             <li>Teaching <a href="#teaching">EASC3420: Machine Learning for Earth and Planetary Sciences</a>.</li>
           </ul>
         </div>
@@ -74,16 +75,20 @@
         <div class="section-heading"><span class="section-number">02</span><h2>Publications</h2></div>
         <div class="publication-overview">
           <p class="publication-summary"><strong>14 first- or corresponding-author papers</strong><br>30+ papers in total</p>
-          <a class="scholar-link" href="https://scholar.google.com/citations?user=QywOkrEAAAAJ">Google Scholar ↗</a>
+          <div class="publication-profile-links"><a class="scholar-link" href="https://scholar.google.com/citations?user=QywOkrEAAAAJ">Google Scholar ↗</a><a class="scholar-link" href="https://www.researchgate.net/profile/Junjie-Chen-25">ResearchGate ↗</a></div>
         </div>
-        <div class="publication-group" aria-labelledby="representative-publications-heading">
+        <div class="publication-tabs" role="tablist" aria-label="Publication lists" hidden>
+          <button type="button" role="tab" id="representative-publications-tab" aria-controls="representative-publications-panel" aria-selected="true">Representative publications <span>5</span></button>
+          <button type="button" role="tab" id="other-publications-tab" aria-controls="other-publications-panel" aria-selected="false" tabindex="-1">Other selected publications <span>12</span></button>
+        </div>
+        <div class="publication-group" id="representative-publications-panel" aria-labelledby="representative-publications-heading">
           <h3 class="publication-group-heading" id="representative-publications-heading">Representative publications <span>5 papers</span></h3>
           <ol class="publication-list" id="representative-publication-list">
           <li>
             <span class="pub-year">2026</span>
-            <div><h3><a href="https://doi.org/10.1029/2026JE010060">Planetary Rotation Effects on Ionospheric Electrodynamics with Closed-Field, Magnetospherically Unforced Polar Caps: Earth-Parameterized Simulations with Implications for Jupiter and Saturn</a></h3>
+            <div><h3><a href="papers/Chen_et_al_2026_JGRPlanets_Accepted_Manuscript.pdf">Planetary Rotation Effects on Ionospheric Electrodynamics with Closed-Field, Magnetospherically Unforced Polar Caps: Earth-Parameterized Simulations with Implications for Jupiter and Saturn</a></h3>
               <p class="authors"><strong>Chen, J.</strong><sup>*</sup>, Lei, J., Delamere, P. A., &amp; Zhang, B.<sup>*</sup></p>
-              <p class="journal">Journal of Geophysical Research: Planets, Accepted <a class="paper-link" href="https://doi.org/10.1029/2026JE010060">DOI ↗</a></p>
+              <p class="journal">Journal of Geophysical Research: Planets, Accepted manuscript <a class="paper-link" href="papers/Chen_et_al_2026_JGRPlanets_Accepted_Manuscript.pdf">PDF ↗</a></p>
             </div>
           </li>
           <li>
@@ -116,9 +121,16 @@
           </li>
           </ol>
         </div>
-        <div class="publication-group" aria-labelledby="other-publications-heading">
-          <h3 class="publication-group-heading" id="other-publications-heading">Other selected publications <span>10 papers</span></h3>
+        <div class="publication-group" id="other-publications-panel" aria-labelledby="other-publications-heading">
+          <h3 class="publication-group-heading" id="other-publications-heading">Other selected publications <span>12 papers</span></h3>
           <ol class="publication-list" id="other-publication-list">
+          <li>
+            <span class="pub-year">2026</span>
+            <div><h3><a href="https://doi.org/10.3847/1538-4365/ae7344">GAMERA-OP: A three-dimensional finite-volume magnetohydrodynamic solver for orthogonal curvilinear geometries</a></h3>
+              <p class="authors">Luo, H., Zhang, B.<sup>*</sup>, Tian, J., Cai, J., <strong>Chen, J.</strong>, Feng, E., Zheng, Z., Xi, S., &amp; Lyon, J. G.</p>
+              <p class="journal">The Astrophysical Journal Supplement Series, 285(1), 15 <a class="paper-link" href="https://doi.org/10.3847/1538-4365/ae7344">DOI ↗</a></p>
+            </div>
+          </li>
           <li>
             <span class="pub-year">2026</span>
             <div><h3><a href="https://doi.org/10.1038/s41467-026-69666-9">Dawn-dusk asymmetrical distribution of Saturn’s cusp</a></h3>
@@ -162,6 +174,13 @@
             </div>
           </li>
           <li>
+            <span class="pub-year">2022</span>
+            <div><h3><a href="https://doi.org/10.1029/2022JA030494">The response of geomagnetic daily variation and ionospheric currents to the annular solar eclipse on 21 June 2020</a></h3>
+              <p class="authors">Liu, X., <strong>Chen, J.</strong>, Han, P., Lei, J.<sup>*</sup>, Dang, T., Huang, F., Chen, H., Jiao, L., Ma, X., Tu, J., Lei, Y., &amp; Zhao, J.</p>
+              <p class="journal">Journal of Geophysical Research: Space Physics, 127(6), e2022JA030494 <a class="paper-link" href="https://doi.org/10.1029/2022JA030494">DOI ↗</a></p>
+            </div>
+          </li>
+          <li>
             <span class="pub-year">2021</span>
             <div><h3><a href="https://doi.org/10.1029/2021JA029745">Ionospheric electrodynamic response to solar flares in September 2017</a></h3>
               <p class="authors"><strong>Chen, J.</strong>, Lei, J.<sup>*</sup>, Wang, W., Liu, J., Maute, A., Qian, L., Zhang, R., &amp; Dang, T.</p>
@@ -192,6 +211,53 @@
           </ol>
         </div>
         <p class="publication-legend">* Corresponding author.</p>
+        <script>
+(() => {
+  const section = document.getElementById('publications');
+  const tablist = section?.querySelector('.publication-tabs');
+  if (!tablist) return;
+
+  const tabs = Array.from(tablist.querySelectorAll('[role="tab"]'));
+  const panels = tabs.map(tab => document.getElementById(tab.getAttribute('aria-controls')));
+  if (!tabs.length || panels.some(panel => !panel)) return;
+
+  function activate(index, focus = false) {
+    tabs.forEach((tab, i) => {
+      const selected = i === index;
+      tab.setAttribute('aria-selected', String(selected));
+      tab.tabIndex = selected ? 0 : -1;
+      panels[i].hidden = !selected;
+    });
+    if (focus) tabs[index].focus();
+  }
+
+  tabs.forEach((tab, i) => {
+    panels[i].setAttribute('role', 'tabpanel');
+    panels[i].setAttribute('aria-labelledby', tab.id);
+    panels[i].tabIndex = 0;
+    tab.addEventListener('click', () => activate(i));
+  });
+
+  tablist.addEventListener('keydown', event => {
+    const index = tabs.indexOf(event.target);
+    if (index < 0) return;
+    let next;
+    switch (event.key) {
+      case 'ArrowRight': next = (index + 1) % tabs.length; break;
+      case 'ArrowLeft': next = (index + tabs.length - 1) % tabs.length; break;
+      case 'Home': next = 0; break;
+      case 'End': next = tabs.length - 1; break;
+      default: return;
+    }
+    event.preventDefault();
+    activate(next, true);
+  });
+
+  activate(0);
+  section.classList.add('publication-tabs-ready');
+  tablist.hidden = false;
+})();
+        </script>
         <!-- publications:end -->
       </section>
 
@@ -263,6 +329,7 @@
         <h2>Explore space physics<br>with me at HKU.</h2>
         <p>I welcome enquiries from prospective PhD students interested in planetary magnetospheres, ionospheric electrodynamics, aurorae, and global numerical modelling.</p>
         <p>Applicants with backgrounds in space physics, physics, geophysics, applied mathematics, or related disciplines are encouraged to get in touch.</p>
+        <p>For 2027 entry, see our <a href="https://www.lsr.hku.hk/phd-opportunities-in-space-and-planetary-sciences/">PhD recruitment announcement</a> for research opportunities and application details.</p>
         <p>For an initial discussion, please email me with your CV, academic transcripts, and a short description of your research interests.</p>
         <a class="button light" href="mailto:cjjvince@hku.hk?subject=Prospective%20PhD%20student%20enquiry">cjjvince@hku.hk <span aria-hidden="true">↗</span></a>
         <p class="admissions-link">Formal application information: <a href="https://www.earthsciences.hku.hk/education/postgraduate_students/research_postgraduates/how_to_apply/">HKU EPS postgraduate admissions ↗</a></p>
