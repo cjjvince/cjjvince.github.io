@@ -64,6 +64,13 @@
 .conference-list>li{break-inside:avoid}
 .conference-list>li+li{border-top:1px solid var(--line);padding-top:18px}
 .activity-list article.conference-service{break-inside:auto}
+.conference-group{margin-top:18px}
+.conference-group+.conference-group{padding-top:18px;border-top:1px solid var(--line)}
+.conference-group h4{margin:0 0 10px;font-size:.94rem;font-weight:600;line-height:1.5;color:var(--accent)}
+.conference-sessions{list-style:none;padding:0;margin:0;display:grid;gap:16px}
+.conference-sessions>li{display:grid;grid-template-columns:42px minmax(0,1fr);gap:12px;break-inside:avoid}
+.conference-year{font-size:.8rem;color:var(--muted);font-variant-numeric:tabular-nums;padding-top:2px}
+@media(max-width:540px){.conference-sessions>li{grid-template-columns:1fr;gap:4px}}
 .activity-links{display:flex;flex-wrap:wrap;gap:5px 18px;margin-top:12px}
 .activity-links a{font-size:.875rem;text-decoration:none}
 .life-photo{margin:0}
