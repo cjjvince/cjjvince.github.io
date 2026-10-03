@@ -76,6 +76,32 @@
 .life-photo{margin:0}
 .life-photo img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:contain;border-radius:5px}
 .life-photo figcaption{font-size:.8rem;color:var(--muted);margin-top:9px}
+/* Outreach photographs: manual galleries, with all photographs available without JavaScript. */
+.outreach-projects{display:grid;gap:32px}
+.outreach-project{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.2fr);gap:28px;align-items:start}
+.outreach-project+.outreach-project{padding-top:30px;border-top:1px solid var(--line)}
+.outreach-copy h3{font:1.3rem/1.4 Georgia,serif;margin:5px 0 9px}
+.outreach-copy p{font-size:.94rem;line-height:1.75}
+.outreach-copy .activity-date,.outreach-brief .activity-date{font-size:.75rem;line-height:1.6}
+.outreach-copy .outreach-role{font-size:.8125rem;color:var(--accent);font-weight:600;margin-bottom:13px}
+.outreach-copy .activity-links{gap:6px 15px;margin-bottom:0}
+.outreach-copy .activity-links a{font-size:.8125rem}
+.outreach-gallery{min-width:0}
+.gallery-slide{margin:0 0 20px}
+.gallery-ready .gallery-slide{margin:0}
+.gallery-slide img{width:100%;height:auto;aspect-ratio:3/2;object-fit:contain;display:block;border-radius:5px;background:var(--soft)}
+.gallery-slide figcaption{font-size:.8rem;color:var(--muted);line-height:1.5;margin-top:9px;min-height:2.4em}
+.gallery-controls{display:flex;align-items:center;justify-content:flex-end;gap:15px;margin-top:4px}
+.gallery-controls button{display:inline-flex;align-items:center;justify-content:center;width:38px;height:36px;border:1px solid var(--line);border-radius:4px;color:var(--accent);background:#fff;font-family:inherit;font-size:1.1rem;line-height:1;cursor:pointer}
+.gallery-controls button:hover{background:var(--soft);border-color:#7eabb4}
+.gallery-controls button:focus-visible{outline:3px solid #bf7719;outline-offset:3px}
+.gallery-count{font-size:.75rem;font-variant-numeric:tabular-nums;color:var(--muted);min-width:30px;text-align:center}
+.outreach-brief{margin-top:31px;padding-top:25px;border-top:1px solid var(--line)}
+.outreach-brief h3{font-size:1rem;margin:5px 0 8px}
+.outreach-brief p:last-child{font-size:.875rem;color:var(--muted);margin-bottom:0}
+@media(min-width:801px) and (max-width:1050px){.outreach-project{grid-template-columns:1fr;gap:20px}.outreach-gallery{max-width:540px}}
+@media(max-width:600px){.outreach-project{grid-template-columns:1fr;gap:20px}.gallery-slide figcaption{min-height:0}.gallery-controls{margin-top:10px}.outreach-copy h3{font-size:1.25rem}}
+@media print{.gallery-controls{display:none!important}.gallery-slide[hidden]{display:block!important}.gallery-slide{break-inside:avoid;margin-bottom:16px!important}.outreach-project{grid-template-columns:1fr}.outreach-gallery{max-width:400px}}
 @media(max-width:540px){.publication-tabs button{font-size:.8rem;padding:11px 7px}.publication-tabs button span{margin-left:4px}}
 @media print{.publication-tabs{display:none!important}.publication-tabs-ready .publication-group[hidden]{display:block!important}.publication-tabs-ready .publication-group-heading{display:flex}.publication-tabs-ready .publication-group+.publication-group{margin-top:30px;padding-top:24px;border-top:1px solid var(--line)}}
 @media(max-width:1050px){.activities-layout{grid-template-columns:minmax(0,1fr) 160px;gap:22px}}
