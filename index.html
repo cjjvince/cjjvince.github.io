@@ -8,7 +8,7 @@
   <link rel="canonical" href="https://cjjvince.github.io/">
   <meta name="theme-color" content="#16394c">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2316394c'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Georgia' font-size='36' fill='white'%3EJJ%3C/text%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css?v=60e98222c91c">
+  <link rel="stylesheet" href="styles.css?v=4503c92d5464">
   <link rel="preload" as="image" type="image/webp" href="outreach/kunpeng-group.webp">
   <link rel="preload" as="image" type="image/webp" href="outreach/ycyw-group.webp">
 </head>
@@ -18,7 +18,20 @@
     <div class="header-inner">
       <a class="brand" href="#about" aria-label="Junjie Chen home"><span class="monogram">JJ</span> Junjie Chen</a>
       <nav aria-label="Main navigation">
-        <a href="#research">Research</a><a href="#publications">Publications</a><a href="#teaching">Teaching</a><a href="#funding">Funding</a><a href="#experience">Experience</a><a href="#activities">Service</a><a href="#outreach">Outreach</a><a class="nav-students" href="#students">For students</a>
+        <details class="nav-dropdown">
+          <summary aria-controls="research-menu">Research</summary>
+          <div class="nav-menu" id="research-menu">
+            <a href="#research">Overview</a>
+            <a href="#publications">Publications</a>
+            <a href="#funding">Projects</a>
+            <a href="#presentations">Conferences</a>
+          </div>
+        </details>
+        <a href="#experience">Experience</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#activities">Service</a>
+        <a href="#outreach">Outreach</a>
+        <a class="nav-students" href="#students">For students</a>
       </nav>
     </div>
   </header>
@@ -47,7 +60,7 @@
         <p class="eyebrow">SPACE PHYSICS · PLANETARY SCIENCE</p>
         <h1>Understanding planetary<br class="desktop-break"> space environments.</h1>
         <p class="intro-lead">I study how planetary magnetospheres and upper atmospheres interact, from Earth to Jupiter.</p>
-        <p>I am a Research Assistant Professor in the Department of Earth and Planetary Sciences at The University of Hong Kong and a faculty researcher in the <a href="https://www.binzh.net/team/"><strong>Planetary Space Environment Modeling (PSEM) Group</strong></a>. I am also a member of the <a href="https://hkiaa.hku.hk/members/">Hong Kong Institute for Astronomy and Astrophysics (HKIAA)</a> and the <a href="https://www.hkusiri.com/develop/319.html">Planetary Space Environment Laboratory</a> at the HKU Shenzhen Institute of Research and Innovation. I received my PhD in Geophysics in 2021 from the University of Science and Technology of China, where I conducted my doctoral research in the <a href="https://iono.ustc.edu.cn/">Ionosphere Lab</a>. I was a research visitor at the High Altitude Observatory, National Center for Atmospheric Research.</p>
+        <p>I am a Research Assistant Professor in the Department of Earth and Planetary Sciences at The University of Hong Kong and a faculty researcher in the <a href="https://www.binzh.net/team/"><strong>Planetary Space Environment Modeling (PSEM) Group</strong></a>. I am also a member of the <a href="https://www.hkusiri.com/develop/319.html">Planetary Space Environment Laboratory</a> at the HKU Shenzhen Institute of Research and Innovation, and of the Hong Kong Institute for Astronomy and Astrophysics (HKIAA). I received my PhD in Geophysics in 2021 from the University of Science and Technology of China, where I conducted my doctoral research in the <a href="https://iono.ustc.edu.cn/">Ionosphere Lab</a>. I was a research visitor at the High Altitude Observatory, National Center for Atmospheric Research.</p>
         <p>My research combines global numerical models, including GAMERA and TIE-GCM, with observations to investigate magnetic reconnection, ionospheric electrodynamics, and magnetosphere–ionosphere coupling at Earth and Jupiter. I have authored over 30 papers, including 14 as first or corresponding author. I have secured RGC GRF and Guangdong NSF funding as PI. I teach three undergraduate courses at HKU. I have organized scientific sessions at AOGS and COSPAR, am a member of the COSPAR ISWAT H4-03 action team, and serve as a reviewer for journals including GRL, JGR, Science China Earth Sciences, and Radio Science.</p>
         <div class="intro-links"><a class="button" href="#publications">Selected publications <span aria-hidden="true">↓</span></a><a class="text-link" href="#students">Interested in a PhD or MPhil? <span aria-hidden="true">↗</span></a></div>
         <div class="update-note recent-updates" role="region" aria-labelledby="recent-updates-heading">
@@ -61,7 +74,7 @@
       </section>
 
       <section id="research" class="content-section">
-        <div class="section-heading"><span class="section-number">01</span><h2>Research</h2></div>
+        <div class="section-heading"><h2>Research</h2></div>
         <p class="research-intro">Global numerical modeling of planetary space environments and space weather, supported by observational analysis.</p>
         <div class="research-grid">
           <article><span class="research-label">MAGNETOSPHERES</span><h3>Magnetospheric dynamics</h3><p>Magnetic topology, reconnection, and solar-wind interactions in planetary magnetospheres, including Jupiter and Ganymede, with ongoing work on Jovian turbulence.</p></article>
@@ -72,7 +85,7 @@
 
       <section id="publications" class="content-section">
         <!-- publications:start -->
-        <div class="section-heading"><span class="section-number">02</span><h2>Publications</h2></div>
+        <div class="section-heading"><h2>Publications</h2></div>
         <div class="publication-overview">
           <p class="publication-summary"><strong>14 first- or corresponding-author papers</strong><br>30+ papers in total</p>
           <div class="publication-profile-links"><a class="scholar-link" href="https://scholar.google.com/citations?user=QywOkrEAAAAJ">Google Scholar ↗</a><a class="scholar-link" href="https://www.researchgate.net/profile/Junjie-Chen-25">ResearchGate ↗</a></div>
@@ -86,35 +99,35 @@
           <ol class="publication-list" id="representative-publication-list">
           <li>
             <span class="pub-year">2026</span>
-            <div><h3><a href="https://doi.org/10.1029/2026JE010060">Planetary Rotation Effects on Ionospheric Electrodynamics with Closed-Field, Magnetospherically Unforced Polar Caps: Earth-Parameterized Simulations with Implications for Jupiter and Saturn</a></h3>
+            <div><h3>Planetary Rotation Effects on Ionospheric Electrodynamics with Closed-Field, Magnetospherically Unforced Polar Caps: Earth-Parameterized Simulations with Implications for Jupiter and Saturn</h3>
               <p class="authors"><strong>Chen, J.</strong><sup>*</sup>, Lei, J., Delamere, P. A., &amp; Zhang, B.<sup>*</sup></p>
               <p class="journal">Journal of Geophysical Research: Planets, 131(9), e2026JE010060 <a class="paper-link" href="https://doi.org/10.1029/2026JE010060">DOI ↗</a></p>
             </div>
           </li>
           <li>
             <span class="pub-year">2026</span>
-            <div><h3><a href="https://doi.org/10.1029/2026GL122024">The role of planetary rotation in polar cusp localization</a></h3>
+            <div><h3>The role of planetary rotation in polar cusp localization</h3>
               <p class="authors"><strong>Chen, J.</strong><sup>*</sup>, Delamere, P. A., Lotko, W., Xu, Y., Yao, Z., Brambles, O., Feng, E., Yang, Z., Pham, K. H., &amp; Zhang, B.<sup>*</sup></p>
               <p class="journal">Geophysical Research Letters, 53(10), e2026GL122024 <a class="paper-link" href="https://doi.org/10.1029/2026GL122024">DOI ↗</a></p>
             </div>
           </li>
           <li>
             <span class="pub-year">2024</span>
-            <div><h3><a href="https://doi.org/10.1051/0004-6361/202450905">Numerical investigation of magnetic reconnection in Jupiter’s dayside magnetodisc</a></h3>
+            <div><h3>Numerical investigation of magnetic reconnection in Jupiter’s dayside magnetodisc</h3>
               <p class="authors"><strong>Chen, J.</strong>, Zhang, B.<sup>*</sup>, Delamere, P. A., Yao, Z., Guo, R., &amp; Brambles, O.</p>
               <p class="journal">Astronomy &amp; Astrophysics, 691, A13 <a class="paper-link" href="https://doi.org/10.1051/0004-6361/202450905">DOI ↗</a></p>
             </div>
           </li>
           <li>
             <span class="pub-year">2023</span>
-            <div><h3><a href="https://doi.org/10.1029/2022GL102577">Prediction of axial asymmetry in Jovian magnetopause reconnection</a></h3>
+            <div><h3>Prediction of axial asymmetry in Jovian magnetopause reconnection</h3>
               <p class="authors"><strong>Chen, J.</strong><sup>*</sup>, Zhang, B.<sup>*</sup>, Lin, D., Delamere, P. A., Yao, Z., Brambles, O., Sorathia, K. A., Merkin, V. G., &amp; Lyon, J. G.</p>
               <p class="journal">Geophysical Research Letters, 50(9), e2022GL102577 <a class="paper-link" href="https://doi.org/10.1029/2022GL102577">DOI ↗</a></p>
             </div>
           </li>
           <li>
             <span class="pub-year">2020</span>
-            <div><h3><a href="https://doi.org/10.1029/2020JA028161">The physical mechanisms for the sunrise enhancement of equatorial ionospheric upward vertical drifts</a></h3>
+            <div><h3>The physical mechanisms for the sunrise enhancement of equatorial ionospheric upward vertical drifts</h3>
               <p class="authors"><strong>Chen, J.</strong>, Wang, W., Lei, J.<sup>*</sup>, &amp; Dang, T.</p>
               <p class="journal">Journal of Geophysical Research: Space Physics, 125(8), e2020JA028161 <a class="paper-link" href="https://doi.org/10.1029/2020JA028161">DOI ↗</a></p>
             </div>
@@ -126,91 +139,91 @@
           <ol class="publication-list" id="other-publication-list">
           <li>
             <span class="pub-year">2026</span>
-            <div><h3><a href="https://doi.org/10.3847/1538-4365/ae7344">GAMERA-OP: A three-dimensional finite-volume magnetohydrodynamic solver for orthogonal curvilinear geometries</a></h3>
+            <div><h3>GAMERA-OP: A three-dimensional finite-volume magnetohydrodynamic solver for orthogonal curvilinear geometries</h3>
               <p class="authors">Luo, H., Zhang, B.<sup>*</sup>, Tian, J., Cai, J., <strong>Chen, J.</strong>, Feng, E., Zheng, Z., Xi, S., &amp; Lyon, J. G.</p>
               <p class="journal">The Astrophysical Journal Supplement Series, 285(1), 15 <a class="paper-link" href="https://doi.org/10.3847/1538-4365/ae7344">DOI ↗</a></p>
             </div>
           </li>
           <li>
             <span class="pub-year">2026</span>
-            <div><h3><a href="https://doi.org/10.1038/s41467-026-73194-x">Shock-induced magnetic reconnection in the Venusian magnetotail</a></h3>
+            <div><h3>Shock-induced magnetic reconnection in the Venusian magnetotail</h3>
               <p class="authors">Zhang, M., Dang, T.<sup>*</sup>, Lei, J.<sup>*</sup>, Zhang, B., Wang, R., Xiao, S., Zhang, T., <strong>Chen, J.</strong>, &amp; Yan, M.</p>
               <p class="journal">Nature Communications, 17, 6513 <a class="paper-link" href="https://doi.org/10.1038/s41467-026-73194-x">DOI ↗</a></p>
             </div>
           </li>
           <li>
             <span class="pub-year">2026</span>
-            <div><h3><a href="https://doi.org/10.1038/s41467-026-69666-9">Dawn-dusk asymmetrical distribution of Saturn’s cusp</a></h3>
+            <div><h3>Dawn-dusk asymmetrical distribution of Saturn’s cusp</h3>
               <p class="authors">Xu, Y., Yao, Z. H.<sup>*</sup>, Arridge, C. S., Zhang, B., <strong>Chen, J. J.</strong>, Badman, S. V., Ray, L. C., Coates, A. J., Ye, S.-Y., Qin, T. S., Zheng, Z. Q., Dunn, W. R., &amp; Wei, Y.</p>
               <p class="journal">Nature Communications, 17, 1861 <a class="paper-link" href="https://doi.org/10.1038/s41467-026-69666-9">DOI ↗</a></p>
             </div>
           </li>
           <li>
             <span class="pub-year">2024</span>
-            <div><h3><a href="https://doi.org/10.3847/1538-4357/ad509c">The dynamic response of Jovian magnetotail reconnection to enhanced solar wind ram pressure</a></h3>
+            <div><h3>The dynamic response of Jovian magnetotail reconnection to enhanced solar wind ram pressure</h3>
               <p class="authors"><strong>Chen, J.</strong><sup>*</sup>, Zhang, B.<sup>*</sup>, Delamere, P. A., Yao, Z., &amp; Brambles, O.</p>
               <p class="journal">The Astrophysical Journal, 969(2), 137 <a class="paper-link" href="https://doi.org/10.3847/1538-4357/ad509c">DOI ↗</a></p>
             </div>
           </li>
           <li>
             <span class="pub-year">2024</span>
-            <div><h3><a href="https://doi.org/10.1029/2023SW003749">Validation of simulated statistical characteristics of magnetosphere–ionosphere coupling in global geospace simulations over an entire Carrington rotation</a></h3>
+            <div><h3>Validation of simulated statistical characteristics of magnetosphere–ionosphere coupling in global geospace simulations over an entire Carrington rotation</h3>
               <p class="authors">Yin, Q., Pham, K. H., <strong>Chen, J.</strong><sup>*</sup>, &amp; Zhang, B.</p>
               <p class="journal">Space Weather, 22(6), e2023SW003749 <a class="paper-link" href="https://doi.org/10.1029/2023SW003749">DOI ↗</a></p>
             </div>
           </li>
           <li>
             <span class="pub-year">2024</span>
-            <div><h3><a href="https://doi.org/10.3847/1538-4357/ad7a7a">Unveiling the connection between the Alfvénic oval and the open–closed field line boundary at Ganymede</a></h3>
+            <div><h3>Unveiling the connection between the Alfvénic oval and the open–closed field line boundary at Ganymede</h3>
               <p class="authors">Yan, T., Zhang, B., <strong>Chen, J.</strong><sup>*</sup>, Yang, Z., Ye, S., &amp; Cui, J.</p>
               <p class="journal">The Astrophysical Journal, 975(1), 107 <a class="paper-link" href="https://doi.org/10.3847/1538-4357/ad7a7a">DOI ↗</a></p>
             </div>
           </li>
           <li>
             <span class="pub-year">2024</span>
-            <div><h3><a href="https://doi.org/10.1038/s41550-024-02270-3">A unified framework for global auroral morphologies of different planets</a></h3>
+            <div><h3>A unified framework for global auroral morphologies of different planets</h3>
               <p class="authors">Zhang, B., Yao, Z.<sup>*</sup>, Brambles, O. J., Delamere, P. A., Lotko, W., Grodent, D., Bonfond, B., <strong>Chen, J.</strong>, Sorathia, K. A., Merkin, V. G., &amp; Lyon, J. G.</p>
               <p class="journal">Nature Astronomy, 8, 964–972 <a class="paper-link" href="https://doi.org/10.1038/s41550-024-02270-3">DOI ↗</a></p>
             </div>
           </li>
           <li>
             <span class="pub-year">2024</span>
-            <div><h3><a href="https://doi.org/10.1038/s41467-024-50449-z">In situ evidence of the magnetospheric cusp of Jupiter from Juno spacecraft measurements</a></h3>
+            <div><h3>In situ evidence of the magnetospheric cusp of Jupiter from Juno spacecraft measurements</h3>
               <p class="authors">Xu, Y., Arridge, C. S., Yao, Z. H.<sup>*</sup>, Zhang, B., Ray, L. C., Badman, S. V., Dunn, W. R., Ebert, R. W., <strong>Chen, J. J.</strong>, Allegrini, F., Kurth, W. S., Qin, T. S., Connerney, J. E. P., McComas, D. J., Bolton, S. J., &amp; Wei, Y.</p>
               <p class="journal">Nature Communications, 15, 6062 <a class="paper-link" href="https://doi.org/10.1038/s41467-024-50449-z">DOI ↗</a></p>
             </div>
           </li>
           <li>
             <span class="pub-year">2022</span>
-            <div><h3><a href="https://doi.org/10.1029/2022JA030494">The response of geomagnetic daily variation and ionospheric currents to the annular solar eclipse on 21 June 2020</a></h3>
+            <div><h3>The response of geomagnetic daily variation and ionospheric currents to the annular solar eclipse on 21 June 2020</h3>
               <p class="authors">Liu, X., <strong>Chen, J.</strong>, Han, P., Lei, J.<sup>*</sup>, Dang, T., Huang, F., Chen, H., Jiao, L., Ma, X., Tu, J., Lei, Y., &amp; Zhao, J.</p>
               <p class="journal">Journal of Geophysical Research: Space Physics, 127(6), e2022JA030494 <a class="paper-link" href="https://doi.org/10.1029/2022JA030494">DOI ↗</a></p>
             </div>
           </li>
           <li>
             <span class="pub-year">2021</span>
-            <div><h3><a href="https://doi.org/10.1029/2021JA029745">Ionospheric electrodynamic response to solar flares in September 2017</a></h3>
+            <div><h3>Ionospheric electrodynamic response to solar flares in September 2017</h3>
               <p class="authors"><strong>Chen, J.</strong>, Lei, J.<sup>*</sup>, Wang, W., Liu, J., Maute, A., Qian, L., Zhang, R., &amp; Dang, T.</p>
               <p class="journal">Journal of Geophysical Research: Space Physics, 126(11), e2021JA029745 <a class="paper-link" href="https://doi.org/10.1029/2021JA029745">DOI ↗</a></p>
             </div>
           </li>
           <li>
             <span class="pub-year">2021</span>
-            <div><h3><a href="https://doi.org/10.1029/2020JA028977">Longitudinal variations of equatorial ionospheric electric fields near sunrise</a></h3>
+            <div><h3>Longitudinal variations of equatorial ionospheric electric fields near sunrise</h3>
               <p class="authors"><strong>Chen, J.</strong>, Wang, W., &amp; Lei, J.<sup>*</sup></p>
               <p class="journal">Journal of Geophysical Research: Space Physics, 126(5), e2020JA028977 <a class="paper-link" href="https://doi.org/10.1029/2020JA028977">DOI ↗</a></p>
             </div>
           </li>
           <li>
             <span class="pub-year">2020</span>
-            <div><h3><a href="https://doi.org/10.1029/2019JA027350">A simulation study on the relationship between field-aligned and field-perpendicular plasma velocities in the ionospheric F region</a></h3>
+            <div><h3>A simulation study on the relationship between field-aligned and field-perpendicular plasma velocities in the ionospheric F region</h3>
               <p class="authors"><strong>Chen, J.</strong>, Lei, J.<sup>*</sup>, Zhang, S., Wang, W., &amp; Dang, T.</p>
               <p class="journal">Journal of Geophysical Research: Space Physics, 125(1), e2019JA027350 <a class="paper-link" href="https://doi.org/10.1029/2019JA027350">DOI ↗</a></p>
             </div>
           </li>
           <li>
             <span class="pub-year">2019</span>
-            <div><h3><a href="https://doi.org/10.1029/2018JA026174">A simulation study on the latitudinal variations of ionospheric zonal electric fields under geomagnetically quiet conditions</a></h3>
+            <div><h3>A simulation study on the latitudinal variations of ionospheric zonal electric fields under geomagnetically quiet conditions</h3>
               <p class="authors"><strong>Chen, J.</strong> &amp; Lei, J.<sup>*</sup></p>
               <p class="journal">Journal of Geophysical Research: Space Physics, 124(2), 1444–1453 <a class="paper-link" href="https://doi.org/10.1029/2018JA026174">DOI ↗</a></p>
             </div>
@@ -268,19 +281,8 @@
         <!-- publications:end -->
       </section>
 
-      <section id="teaching" class="content-section">
-        <div class="section-heading"><span class="section-number">03</span><h2>Teaching</h2></div>
-        <p>Undergraduate teaching at The University of Hong Kong.</p>
-        <ul class="course-list">
-          <li><span>EASC3420</span><div><h3><a href="https://webapp.science.hku.hk/sr4/servlet/enquiry?Type=Course&amp;course_code=EASC3420">Machine Learning for Earth and Planetary Sciences</a></h3><p class="course-meta">Teaching since Autumn 2026</p></div></li>
-          <li><span>EASC2410</span><div><h3><a href="https://webapp.science.hku.hk/sr4/servlet/enquiry?Type=Course&amp;course_code=EASC2410">Data Analysis and Modeling in Earth Sciences</a></h3><p class="course-meta">Teaching since Spring 2025</p></div></li>
-          <li><span>EASC2404</span><div><h3><a href="https://webapp.science.hku.hk/sr4/servlet/enquiry?Type=Course&amp;course_code=EASC2404">Introduction to Atmosphere and Hydrosphere</a></h3><p class="course-meta">Teaching since Autumn 2024</p></div></li>
-        </ul>
-        <p class="section-aside">Professional development: Professional Certificate in Teaching and Learning in Higher Education (PCTLHE), The University of Hong Kong, 2025.</p>
-      </section>
-
       <section id="funding" class="content-section" aria-labelledby="funding-heading">
-        <div class="section-heading"><span class="section-number">04</span><h2 id="funding-heading">Research funding &amp; projects</h2></div>
+        <div class="section-heading"><h2 id="funding-heading">Research funding &amp; projects</h2></div>
         <div class="publication-tabs funding-tabs" role="tablist" aria-label="Funding and project lists" hidden>
           <button type="button" role="tab" id="pi-funding-tab" aria-controls="pi-funding-panel" aria-selected="true">Principal Investigator (PI) <span>4</span></button>
           <button type="button" role="tab" id="collaborative-projects-tab" aria-controls="collaborative-projects-panel" aria-selected="false" tabindex="-1">Collaborative projects <span>2</span></button>
@@ -375,8 +377,95 @@
         </script>
       </section>
 
+      <section id="presentations" class="content-section" aria-labelledby="presentations-heading">
+        <!-- presentations:start -->
+        <div class="section-heading"><h2 id="presentations-heading">Conference presentations</h2></div>
+        <div class="publication-tabs presentation-tabs" role="tablist" aria-label="Conference presentation lists" hidden>
+          <button type="button" role="tab" id="international-talks-tab" aria-controls="international-talks-panel" aria-selected="true">International talks <span>4</span></button>
+          <button type="button" role="tab" id="international-posters-tab" aria-controls="international-posters-panel" aria-selected="false" tabindex="-1">International posters <span>7</span></button>
+          <button type="button" role="tab" id="domestic-invited-talks-tab" aria-controls="domestic-invited-talks-panel" aria-selected="false" tabindex="-1">Domestic invited talks <span>4</span></button>
+        </div>
+        <div class="presentation-group" id="international-talks-panel" aria-labelledby="international-talks-heading">
+          <h3 class="presentation-group-heading" id="international-talks-heading">International talks</h3>
+          <ul class="presentation-list" role="list">
+            <li class="presentation-entry"><time class="presentation-year" datetime="2025">2025</time><div><h4>AOGS Annual Meeting <span class="presentation-meta">· Singapore · Oral</span></h4><p class="presentation-title">Numerical Investigation of Magnetic Reconnection Near Jupiter’s Magnetodisc</p></div></li>
+            <li class="presentation-entry"><time class="presentation-year" datetime="2024">2024</time><div><h4>AOGS Annual Meeting <span class="presentation-meta">· Pyeongchang, South Korea · Oral</span></h4><p class="presentation-title">Predicting the Location of the Jovian Polar Cusp Through MHD Diagnostics in Global Simulations</p></div></li>
+            <li class="presentation-entry"><time class="presentation-year" datetime="2022">2022</time><div><h4>AGU Fall Meeting <span class="presentation-meta">· Chicago, USA · Oral</span></h4><p class="presentation-title">Prediction of Axial Asymmetry in Jovian Magnetopause Reconnection</p></div></li>
+            <li class="presentation-entry"><time class="presentation-year" datetime="2022">2022</time><div><h4>CEDAR Workshop <span class="presentation-meta">· Austin, USA · Invited</span></h4><p class="presentation-title">The Response of Geomagnetic Daily Variation and Ionospheric Currents to the Annular Solar Eclipse on 21 June 2020</p></div></li>
+          </ul>
+        </div>
+        <div class="presentation-group" id="international-posters-panel" aria-labelledby="international-posters-heading">
+          <h3 class="presentation-group-heading" id="international-posters-heading">International posters</h3>
+          <ul class="presentation-list" role="list">
+            <li class="presentation-entry"><time class="presentation-year" datetime="2026">2026</time><div><h4>Magnetospheres of the Outer Planets (MOP) <span class="presentation-meta">· Toulouse, France</span></h4><p class="presentation-title">Radial Distribution of Magnetic Turbulence in Jupiter’s Rotating Magnetosphere</p></div></li>
+            <li class="presentation-entry"><time class="presentation-year" datetime="2025">2025</time><div><h4>AGU Fall Meeting <span class="presentation-meta">· New Orleans, USA</span></h4><p class="presentation-title">Saturn-like Auroral Morphological Transition at Earth</p></div></li>
+            <li class="presentation-entry"><time class="presentation-year" datetime="2025">2025</time><div><h4>Asia-Oceania Space Weather Alliance (AOSWA) Workshop <span class="presentation-meta">· Haikou, China</span></h4><p class="presentation-title">A Statistical Validation of Magnetosphere–Ionosphere Coupling in GAMERA-TIEGCM Simulations for Space Weather Applications</p></div></li>
+            <li class="presentation-entry"><time class="presentation-year" datetime="2023">2023</time><div><h4>AGU Fall Meeting <span class="presentation-meta">· San Francisco, USA</span></h4><p class="presentation-title">Exploring MHD Turbulence in the Jovian Magnetosphere: Insights from Juno/Galileo Data and Global MHD Code</p></div></li>
+            <li class="presentation-entry"><time class="presentation-year" datetime="2023">2023</time><div><h4>AOGS Annual Meeting <span class="presentation-meta">· Singapore</span></h4><p class="presentation-title">Prediction of Axial Asymmetry in Jovian Magnetopause Reconnection</p></div></li>
+            <li class="presentation-entry"><time class="presentation-year" datetime="2020">2020</time><div><h4>CEDAR Virtual Meeting <span class="presentation-meta">· Online</span></h4><p class="presentation-title">The Physical Mechanisms for the Enhancement of Equatorial Ionospheric Upward Vertical Drifts Near Sunrise in June</p></div></li>
+            <li class="presentation-entry"><time class="presentation-year" datetime="2019">2019</time><div><h4>AGU Fall Meeting <span class="presentation-meta">· San Francisco, USA</span></h4><p class="presentation-title">A Simulation Study on the Relationship Between Field-Aligned and Field-Perpendicular Plasma Velocities in the Ionospheric F Region</p></div></li>
+          </ul>
+        </div>
+        <div class="presentation-group" id="domestic-invited-talks-panel" aria-labelledby="domestic-invited-talks-heading">
+          <h3 class="presentation-group-heading" id="domestic-invited-talks-heading">Domestic invited talks</h3>
+          <ul class="presentation-list" role="list">
+            <li class="presentation-entry"><time class="presentation-year" datetime="2026">2026</time><div><h4>CGU Annual Meeting <span class="presentation-meta">· Hangzhou, China</span></h4><ol class="presentation-titles"><li>Numerical Modeling of the Magnetic Environment in Jupiter’s Inner Magnetosphere</li><li>Effects of Planetary Rotation on Polar Ionospheric Electrodynamics</li></ol></div></li>
+            <li class="presentation-entry"><time class="presentation-year" datetime="2026">2026</time><div><h4>National Planetary Science Conference <span class="presentation-meta">· Guangzhou, China</span></h4><p class="presentation-title">Effects of Planetary Rotation on Ionospheric Electrodynamics</p></div></li>
+            <li class="presentation-entry"><time class="presentation-year" datetime="2024">2024</time><div><h4>National Planetary Science Conference <span class="presentation-meta">· Nanjing, China</span></h4><p class="presentation-title">Effects of Planetary Rotation on Polar Cusp Locations</p></div></li>
+          </ul>
+        </div>
+        <script>
+(() => {
+  const section = document.getElementById('presentations');
+  const tablist = section?.querySelector('.presentation-tabs');
+  if (!tablist) return;
+
+  const tabs = Array.from(tablist.querySelectorAll('[role="tab"]'));
+  const panels = tabs.map(tab => document.getElementById(tab.getAttribute('aria-controls')));
+  if (!tabs.length || panels.some(panel => !panel)) return;
+
+  function activate(index, focus = false) {
+    tabs.forEach((tab, i) => {
+      const selected = i === index;
+      tab.setAttribute('aria-selected', String(selected));
+      tab.tabIndex = selected ? 0 : -1;
+      panels[i].hidden = !selected;
+    });
+    if (focus) tabs[index].focus();
+  }
+
+  tabs.forEach((tab, i) => {
+    panels[i].setAttribute('role', 'tabpanel');
+    panels[i].setAttribute('aria-labelledby', tab.id);
+    panels[i].tabIndex = 0;
+    tab.addEventListener('click', () => activate(i));
+  });
+
+  tablist.addEventListener('keydown', event => {
+    const index = tabs.indexOf(event.target);
+    if (index < 0) return;
+    let next;
+    switch (event.key) {
+      case 'ArrowRight': next = (index + 1) % tabs.length; break;
+      case 'ArrowLeft': next = (index + tabs.length - 1) % tabs.length; break;
+      case 'Home': next = 0; break;
+      case 'End': next = tabs.length - 1; break;
+      default: return;
+    }
+    event.preventDefault();
+    activate(next, true);
+  });
+
+  activate(0);
+  section.classList.add('presentation-tabs-ready');
+  tablist.hidden = false;
+})();
+        </script>
+        <!-- presentations:end -->
+      </section>
+
       <section id="experience" class="content-section">
-        <div class="section-heading"><span class="section-number">05</span><h2>Experience &amp; education</h2></div>
+        <div class="section-heading"><h2>Experience &amp; education</h2></div>
         <dl class="timeline">
           <div><dt>2024 — present</dt><dd><h3>Research Assistant Professor</h3><p>The University of Hong Kong</p><p class="detail">Department of Earth and Planetary Sciences</p><p class="detail">Research collaborators: Prof. Binzheng Zhang and Prof. Zhonghua Yao</p></dd></div>
           <div><dt>2021 — 2024</dt><dd><h3>Postdoctoral Fellow</h3><p>The University of Hong Kong</p><p class="detail">Supervisor: Prof. Binzheng Zhang</p></dd></div>
@@ -386,8 +475,19 @@
         </dl>
       </section>
 
+      <section id="teaching" class="content-section">
+        <div class="section-heading"><h2>Teaching</h2></div>
+        <p>Undergraduate teaching at The University of Hong Kong.</p>
+        <ul class="course-list">
+          <li><span>EASC3420</span><div><h3>Machine Learning for Earth and Planetary Sciences</h3><p class="course-meta">Teaching since Autumn 2026</p></div></li>
+          <li><span>EASC2410</span><div><h3>Data Analysis and Modeling in Earth Sciences</h3><p class="course-meta">Teaching since Spring 2025</p></div></li>
+          <li><span>EASC2404</span><div><h3>Introduction to Atmosphere and Hydrosphere</h3><p class="course-meta">Teaching since Autumn 2024</p></div></li>
+        </ul>
+        <p class="section-aside">Professional development: Professional Certificate in Teaching and Learning in Higher Education (PCTLHE), The University of Hong Kong, 2025.</p>
+      </section>
+
       <section id="activities" class="content-section">
-        <div class="section-heading"><span class="section-number">06</span><h2>Academic service &amp; recognition</h2></div>
+        <div class="section-heading"><h2>Academic service &amp; recognition</h2></div>
         <div class="activities-layout">
         <div class="activity-list">
           <article class="conference-service" aria-labelledby="conference-service-heading">
@@ -437,7 +537,7 @@
       </section>
 
       <section id="outreach" class="content-section" aria-labelledby="outreach-heading">
-        <div class="section-heading"><span class="section-number">07</span><h2 id="outreach-heading">Outreach &amp; Research Training</h2></div>
+        <div class="section-heading"><h2 id="outreach-heading">Outreach &amp; Research Training</h2></div>
         <div class="outreach-projects">
           <article class="outreach-project" aria-labelledby="kunpeng-heading">
             <div class="outreach-copy">
@@ -482,7 +582,6 @@
           <p>Teaching assistant at the first and third editions, Sun Yat-sen University.</p>
         </article>
       </section>
-      <script src="outreach-gallery.js?v=947273274ef1" defer></script>
 
       <section id="students" class="students-section">
         <span class="small-label">PROSPECTIVE STUDENTS</span>
@@ -498,5 +597,7 @@
       <footer><p>© 2026 Junjie Chen · 陈俊杰</p><a href="#about">Back to top ↑</a></footer>
     </main>
   </div>
+  <script src="outreach-gallery.js?v=947273274ef1" defer></script>
+  <script src="navigation.js?v=93cdf405ac51" defer></script>
 </body>
 </html>
