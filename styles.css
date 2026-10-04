@@ -105,6 +105,10 @@
 .outreach-copy .outreach-role{font-size:.8125rem;color:var(--accent);font-weight:600;margin-bottom:13px}
 .outreach-copy .activity-links{gap:6px 15px;margin-bottom:0}
 .outreach-copy .activity-links a{font-size:.8125rem}
+.outreach-team{margin:17px 0}
+.outreach-team h4{font-size:.9rem;line-height:1.5;margin:0 0 6px;font-weight:600}
+.outreach-copy .outreach-team p{font-size:.85rem;line-height:1.7;margin:0 0 5px;color:var(--muted)}
+.outreach-team strong{font-weight:550;color:var(--ink)}
 .outreach-gallery{min-width:0}
 .gallery-slide{margin:0 0 20px}
 .gallery-ready .gallery-slide{margin:0}
